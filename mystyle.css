@@ -1,0 +1,90 @@
+*, *:, :* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, .price-discount {
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+body {
+    font-family: Montserrat;
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 18rem;
+    border-radius: 10px 0 0 10px;
+    grid-area: photo;
+}
+button {
+    background-color: hsl(158, 36%, 37%);
+    font-family: Montserrat;
+    border: none;
+    border-radius: 7px;
+    color: hsl(0, 0%, 100%);
+    grid-area: button;
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+}
+
+.shop-cart {
+    width: .8em;
+}
+
+.description {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    grid-area: description;
+    padding-right: 1rem;
+}
+
+.price-discount {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.5rem;
+    grid-area: discount;
+}
+
+.price-original {
+    text-decoration: line-through;
+    font-size: .780rem;
+    grid-area: price;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: .685rem;
+    letter-spacing: .3em;
+    grid-area: title;
+    padding-top: 1rem;
+}
+
+.white {
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+}
+.name {
+    grid-area: name;
+    padding-right: 3rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr .5fr .3fr;
+    grid-template-rows: .2fr 1fr .5fr .1fr .1fr;
+    grid-template-areas: "photo title title"
+                        "photo name name"
+                        "photo description description"
+                        "photo discount price"
+                        "photo button button";
+
+}
